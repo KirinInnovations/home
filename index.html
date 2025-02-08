@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirin Innovations - Your Tech Shopping Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <h1 class="text-2xl font-bold text-blue-600">Kirin Innovations</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Products</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Deals</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div class="relative">
+                    <input type="text" placeholder="Search products..." class="w-64 px-4 py-2 rounded-full border focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <button class="absolute right-3 top-2.5 text-gray-400">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">
+                        <i class="fas fa-user"></i>
+                        <span class="ml-1">Login</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="ml-1">Cart</span>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">3</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="mt-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl font-bold mb-4">Discover Amazing Tech Deals</h2>
+                <p class="text-xl mb-8">Shop the latest gadgets and innovations at unbeatable prices.</p>
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-8">Featured Categories</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-laptop text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="font-semibold">Laptops</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-mobile-alt text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="font-semibold">Smartphones</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-headphones text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="font-semibold">Audio</h4>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition">
+                    <i class="fas fa-gamepad text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="font-semibold">Gaming</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-8">Featured Products</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="/api/placeholder/400/300" alt="Product" class="w-full h-48 object-cover"/>
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">Latest MacBook Pro</h4>
+                        <div class="flex items-center mb-2">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(128)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-blue-600">$1299.99</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="/api/placeholder/400/300" alt="Product" class="w-full h-48 object-cover"/>
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">iPhone 15 Pro</h4>
+                        <div class="flex items-center mb-2">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(256)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-blue-600">$999.99</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="/api/placeholder/400/300" alt="Product" class="w-full h-48 object-cover"/>
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">Sony WH-1000XM5</h4>
+                        <div class="flex items-center mb-2">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(189)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-blue-600">$349.99</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                    <img src="/api/placeholder/400/300" alt="Product" class="w-full h-48 object-cover"/>
+                    <div class="p-4">
+                        <h4 class="font-semibold mb-2">PS5 Console</h4>
+                        <div class="flex items-center mb-2">
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(421)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xl font-bold text-blue-600">$499.99</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-4">Stay Updated with Latest Deals</h3>
+            <p class="mb-8">Subscribe to our newsletter and never miss out on exclusive offers!</p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-l-lg text-gray-900">
+                <button class="bg-gray-900 px-6 py-3 rounded-r-lg hover:bg-gray-800">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Kirin Innovations</h4>
+                    <p class="text-gray-400">Your trusted source for the latest tech products and innovations.</p>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Customer Service</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Order Status</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold mb-4">Connect With Us</h5>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Kirin Innovations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
